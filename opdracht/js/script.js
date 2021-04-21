@@ -8,6 +8,7 @@ arrInputPosities = [];      //array van input posities
 arrCodewordPosities = [];   //array van codeword posities
 arrOutputPosities = [];     //array van output posities
 
+//Vervelende string namen zeg
 //Zet een string om naar een array met posities
 function stringNaarPosities(str){
     outputArray = [];
