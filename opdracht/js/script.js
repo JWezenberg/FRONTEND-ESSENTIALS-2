@@ -27,8 +27,15 @@ function stringNaarPosities(str){
 function positiesNaarString(arr){
     var outputString = "";
 
+    for (let i = 0; i < arr.length; i++){
+        for (let j = 0; j < strAlfabet.length; j++) {
+            if(arr[i].toUpperCase() == strAlfabet[j]){
+               
+                outputString = outputString + strAlfabet[j];
 
-
+            }
+        }
+    }
     return outputString;
 }
 
@@ -44,6 +51,8 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     var intMod = inputLength % codewordLength; //het aantal letters dat overblijft die nog moeten worden aangevuld
 
     //TODO: opdracht 2
+
+//everything i think of ends in an errorstate :/
 
     // console.log("Codeword full: " + outputString);
     return outputString;
